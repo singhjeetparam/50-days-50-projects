@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.bg{
+    background-image: url("./assets/madison-kuhn-aHrRR38CU3k-unsplash.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    
+
+}
+
+.loading__screen{
+    position: absolute;
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+}

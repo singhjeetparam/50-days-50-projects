@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(90deg, #7d5fff, #7158e2);;
+}
+
+.search__hidden{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.search__input{
+    border: none;
+    font-size: 2rem; 
+    opacity: 1;
+    transform: all 2s ease 1s;
+}
+
+.search__input:focus{
+    outline: none;
+}
+
+.fa-magnifying-glass{
+    font-size: 2rem;
+}
+
+.search__input-disable{
+    display: none;
+    opacity: 0;
+    transform: all 2s ease 1s; 
+    
+}
+
+
