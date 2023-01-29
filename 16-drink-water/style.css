@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3494e4;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    color: white;
+}
+.wrapper h2{
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.wrapper p{
+    font-weight: lighter;
+}
+
+.jug{
+    height: 310px;
+    width: 200px;
+    background-color: white;
+    border: 5px solid #144fc6;
+    border-radius: 0px 0px 5px 5px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #144fc6;
+    position: relative;
+
+}
+
+.jug span{
+    position: absolute;
+    z-index: 10;
+}
+
+
+
+.jug__filled{
+    background-color: #6ab3f8;
+    /* border-radius: 0px 0px 5px 5px ; */
+    position: absolute;
+    width: 190px;
+    bottom: 0;
+
+}
+
+
+.glass{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border: 5px solid #144fc6;
+    border-radius: 0px 0px 25px 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #144fc6;
+ 
+}
+
+
+.glasses{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+    gap: 1rem;
+}
+
+.glass.selected{
+    background-color: #6ab3f8;
+    color: white;
+}
+

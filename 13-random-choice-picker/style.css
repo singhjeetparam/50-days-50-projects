@@ -10,6 +10,7 @@ body{
     justify-content: center;
     height: 100vh;
     background-color: #2b88f0;
+    overflow: hidden;
 }
 
 .rcg__wrapper{
@@ -32,12 +33,24 @@ body{
     border-radius: 5px;
 }
 
-.rcg__textarea{
-   overflow-y: ;
+.rcg__choices{
+    max-width: 500px;
+   
+    
 }
+
 
 .rcg__choice{
     background-color: #f0932b;
     padding: 0.5rem 1rem;
     border-radius: 5px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
 }
+
+.highlight{
+    background-color: #a15600;
+}
+

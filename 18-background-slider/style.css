@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body{
+    /* background-image: url(./assets/amr-taha-SMMqej67qjI-unsplash.jpg); */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+body::before{
+    content: "";
+    background: rgb(0, 0, 0);
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.wrapper{
+    position: relative;
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left__control{
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    left: -100px;
+}
+
+.right__control{
+    color: white;
+    font-size: 4rem;
+    font-weight: bolder;
+    position: absolute;
+    right: -100px;
+}
+
+
+.bg__screen{
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.hidden{
+    display: none;
+}
+
+.disable{
+    display: none;
+}
