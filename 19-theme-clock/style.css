@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+html{
+    transition: all 0.5 ease-in;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.toggle{
+    background: black;
+    border: none;
+    font-size: 3rem;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.time__and__date{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time__and__date > *{
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+
+.dark{
+    background-color: black;
+    color: white;
+}
+.theme__btn{
+    background-color: white;
+    color: black;
+}
+
+.clock{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+}
+
+.needle{
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100px;
+    width: 5px;
+    transform-origin: bottom center;
+}
+
+.needle.hour{
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.needle.minute{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 125px;
+}
+.needle.second{
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 175px;
+    background-color: red;
+}
+
+.center__point{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

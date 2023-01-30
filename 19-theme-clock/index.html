@@ -6,11 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme Clock</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="app.js"></script>
 </head>
-<body>
+<body class="">
     <div class="wrapper"> 
-        <span id="time"></span>
+        <div class="dark__mode">
+            <button class="toggle">Toggle Theme</button>
+        </div>
+        <div class="clock">
+            <div class="hour needle"></div>
+            <div class="minute needle"></div>
+            <div class="second needle"></div>
+            <div class="center__point"></div>
+        </div>
+        <div class="time__and__date">
+            <div class="time">12:00</div>
+            <div class="date">3423432432</div>
+        </div>
+        
+        
     </div>
+    <script defer src="app.js"></script>
 </body>
 </html>

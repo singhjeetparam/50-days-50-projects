@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.triangle{
+    position: relative;
+}
+
+.fa-play{
+    font-size: 5rem;
+}
+
+#icon-1{
+    position: absolute;
+    left: -40px;
+    transform-origin: top right;
+}
+
+#icon-2{
+    position: absolute;
+    transform: rotate(90deg);
+    top: -50px;
+    left: -5px;
+    transform-origin: right top;
+}
+
+#icon-1.flip{
+    transform: scaleX(-1);
+}
+
+#icon-2.flip{
+    transform: scaleX(-1);
+}
