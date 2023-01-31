@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.nav{
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.active{
+    background-color: white;
+    color: #222222;
+    padding: 5px 20px;
+    transition: all 0.3s ease-in-out;
+}
+.nav__list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav__list ul :first-child{
+    color: red;
+}
+.nav__list ul li:hover{
+    color: red;
+}
+
+.welcome__screen{
+    background-image: url(./assets/dell-1o5MZblCP50-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+.welcome__screen::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(67, 67, 67) 0%, rgb(49, 49, 49) 100%);
+    opacity: 0.3;
+    position: absolute;
+
+}
+.welcome__screen h1, p{
+    z-index: 99;
+}
+.info{
+    padding: 10px 50px;
+}
+
+.content{
+    margin: 20px 0px;
+}
+.content p{
+    font-size: 0.6rem;
+   
+}

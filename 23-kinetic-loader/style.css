@@ -9,34 +9,55 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: black;
 }
 
-.triangle{
+.kinetic{
     position: relative;
+    height: 80px;
+    width: 80px;
 }
 
-.fa-play{
-    font-size: 5rem;
-}
-
-#icon-1{
+.kinetic::after, .kinetic::before{
+    content: "";
     position: absolute;
-    left: -40px;
-    transform-origin: top right;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: white;
+    animation: rotateA 2s linear infinite 0.5s;
 }
 
-#icon-2{
-    position: absolute;
+.kinetic::before{
     transform: rotate(90deg);
-    top: -50px;
-    left: -5px;
-    transform-origin: right top;
+    animation: rotateB 2s linear infinite;
 }
 
-#icon-1.flip{
-    transform: scaleX(-1);
+@keyframes rotateA {
+    0%,  25%{
+        transform: rotate(0deg);
+    }
+
+    50%, 75%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
-#icon-2.flip{
-    transform: scaleX(-1);
+
+@keyframes rotateB {
+    0%, 25%{
+        transform: rotate(90deg);
+    }
+    50%, 75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(450deg);
+    }
 }

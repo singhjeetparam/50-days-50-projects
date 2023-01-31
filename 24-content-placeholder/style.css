@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content{
+    height: 400px;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.content__image{
+    height: 200px;
+}
+
+.content__image img{
+    height: 100%;
+    width: 100%;
+}
+
+.content__text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 10px;
+}
+
+.content__about{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about__image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.about__image img{
+    width: 100%;
+}
+
+.about__name p{
+    font-style: italic;
+}
